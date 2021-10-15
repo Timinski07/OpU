@@ -2,6 +2,8 @@ var i = 0
 var error = 0;
 var worked3 = false;
 
+"Hello There"
+
 function checkList(word) {
     var einArray = ["lebensmittel", "rezept", "github", "gesund", "nahrung", "postfach", " gmail", " usb c ", " usb-c "," adapter ", "programming", "code", "java", "c#", "python", "server", "powershell", " api ", "regex", "typescript", "node.js",
         "windows", "extension", "computerphile", " etf", "investor", "wireshark", "program", "html", "proxy", "unity", "xml", " css ", " php ",
