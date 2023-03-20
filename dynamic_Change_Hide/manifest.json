@@ -1,0 +1,17 @@
+﻿{
+  "name": "Blockieren waehrend veraendert",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Blockiert den Inhalt einer website, solange diese untersucht wird",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "hideWhileChange.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
