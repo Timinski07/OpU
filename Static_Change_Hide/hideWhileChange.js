@@ -1,5 +1,7 @@
-﻿function hideContent(mutations, observer) {
-    var htmlTag = document.querySelector("html")
+﻿var htmlTag
+
+function hideContent(mutations, observer) {
+    htmlTag = document.querySelector("html")
     if (htmlTag.style.display != "none") {
         htmlTag.style.display = "none"
         observer.disconnect()
@@ -12,11 +14,12 @@ observer.observe(document.documentElement, { childList: true, subtree: true });
 //wait until dom is fully received
 document.addEventListener("DOMContentLoaded", function () {
     //copy body and display loading... on website
+    
     bodyTag = document.querySelector("body");
     var bodyCopy = bodyTag.outerHTML;
     bodyTag.innerHTML = "<h1 style= 'visibility: visible, color:white'>loading...<h1>"
-    document.querySelector("html").style.display = "block"
-
+    htmlTag.style.display = "block"
+    
     //analyse and change the dom-content of site, that exists in the body
     //Making Changes...
 
